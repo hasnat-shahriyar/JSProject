@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Cart System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>E-commerce Cart</h1>
+      <div class="products">
+        <div class="product">
+          <img src="image/1.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <p>$10</p>
+          <button class="add-to-cart" onclick="addToCart(10)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="image/2.jpeg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>$15</p>
+          <button class="add-to-cart" onclick="addToCart(15)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="cart-sidebar">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total Quantity: <span id="total-quantity">0</span></p>
+        <p>Total Price: $<span id="total-price">0</span></p>
+      </div>
+      <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge" id="cartQuantity">0</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
